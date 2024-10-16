@@ -1,0 +1,43 @@
+{
+  "name": "nodejs-grpc-labs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Random gRPC + Node.js samples and experiments for learning/reference purposes",
+  "scripts": {
+    "lint": "eslint --max-warnings=0 '{src,__tests__}/**/*.js'",
+    "lint:fix": "eslint --fix '{src,__tests__}/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjsicam/nodejs-grpc-labs"
+  },
+  "keywords": [
+    "grpc",
+    "grpc-client",
+    "grpc-server",
+    "grpc-streaming",
+    "grpc-client-streaming",
+    "grpc-server-streaming",
+    "grpc-duplex-streaming"
+  ],
+  "author": "Benj Sicam <benjsicam@gmail.com> (https://github.com/benjsicam)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjsicam/nodejs-grpc-labs/issues"
+  },
+  "homepage": "https://github.com/benjsicam/nodejs-grpc-labs#readme",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@grpc/grpc-js": "^1.8.12",
+    "@grpc/proto-loader": "^0.7.5",
+    "google-protobuf": "^3.21.2",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4"
+  }
+}

@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package math;
+
+message SubtractionRequest {
+  float minuend = 1;
+  float subtrahend = 2;
+}
+
+message SubtractionResponse {
+  float difference = 1;
+}
+
+service SubtractionService {
+  rpc subtract (SubtractionRequest) returns (SubtractionResponse) {}
+}

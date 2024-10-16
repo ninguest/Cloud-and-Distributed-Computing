@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-grpc-labs-struct-metadata",
+  "version": "1.0.0",
+  "description": "Random gRPC + Node.js samples and experiments for learning/reference purposes",
+  "scripts": {
+    "lint": "eslint --max-warnings=0 '{src,__tests__}/**/*.js'",
+    "lint:fix": "eslint --fix '{src,__tests__}/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjsicam/nodejs-grpc-labs"
+  },
+  "keywords": [
+    "grpc"
+  ],
+  "author": "Benj Sicam <benjsicam@gmail.com> (https://github.com/benjsicam)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjsicam/nodejs-grpc-labs/issues"
+  },
+  "homepage": "https://github.com/benjsicam/nodejs-grpc-labs#readme",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@grpc/grpc-js": "^1.8.12",
+    "@grpc/proto-loader": "^0.7.5",
+    "google-protobuf": "^3.21.2",
+    "lodash": "^4.17.21"
+  }
+}
