@@ -31,7 +31,8 @@
     "@grpc/grpc-js": "^1.8.12",
     "@grpc/proto-loader": "^0.7.5",
     "google-protobuf": "^3.21.2",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "nodejs-grpc-labs": "file:"
   },
   "devDependencies": {
     "eslint": "^8.35.0",
