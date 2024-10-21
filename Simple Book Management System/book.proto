@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package bookmanagement;
+
+service BookService {
+  // RPC to get details of a single book by its ID
+  rpc GetBookInfo(BookId) returns (Book) {}
+
+  // RPC to list all books
+  rpc ListBooks(Empty) returns (BookList) {}
+
+  // RPC to add a new book
+  rpc AddBook(Book) returns (Book) {}
+}
+
+// Message format for a book
+message Book {
+  int32 id = 1;
+  string title = 2;
+  string author = 3;
+  string year = 4;
+}
+
+// Message format to hold a book ID
+message BookId {
+  int32 id = 1;
+}
+
+// Message format for an empty request
+message Empty {}
+
+// Message format to hold a list of books
+message BookList {
+  repeated Book books = 1;
+}

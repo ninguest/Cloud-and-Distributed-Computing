@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package weatherinfo;
+
+service WeatherService {
+  // RPC to get weather for a specific location
+  rpc GetWeather(Location) returns (Weather) {}
+
+  // RPC to list all available locations
+  rpc ListLocations(Empty) returns (LocationList) {}
+
+  // RPC to add a new location's weather data
+  rpc AddWeather(Weather) returns (Weather) {}
+}
+
+// Message format for weather data
+message Weather {
+  string location = 1;
+  string temperature = 2;
+  string humidity = 3;
+  string windSpeed = 4;
+}
+
+// Message format for a location
+message Location {
+  string location = 1;
+}
+
+// Message format for an empty request
+message Empty {}
+
+// Message format to hold a list of locations
+message LocationList {
+  repeated string locations = 1;
+}

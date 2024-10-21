@@ -1,0 +1,15 @@
+[
+    {
+      "location": "New York",
+      "temperature": "20°C",
+      "humidity": "65%",
+      "windSpeed": "12 km/h"
+    },
+    {
+      "location": "Singapore",
+      "temperature": "30°C",
+      "humidity": "85%",
+      "windSpeed": "5 km/h"
+    }
+  ]
+  

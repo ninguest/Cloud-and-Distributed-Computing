@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package todo;
+
+// Service definition
+service TodoService {
+  // Retrieve all tasks
+  rpc GetTasks(Empty) returns (TaskList) {}
+
+  // Add a new task
+  rpc AddTask(Task) returns (Task) {}
+
+  // Delete a task by ID
+  rpc DeleteTask(TaskId) returns (TaskId) {}
+}
+
+// Message for a single task
+message Task {
+  int32 id = 1;
+  string description = 2;
+  bool isCompleted = 3;
+}
+
+// Message for a list of tasks
+message TaskList {
+  repeated Task tasks = 1;
+}
+
+// Message for a task ID
+message TaskId {
+  int32 id = 1;
+}
+
+// Message for an empty request
+message Empty {}
